@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <title>GPU Cloud Demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>GPU Cloud Demo</h1>
-      <p class="subtitle">Аренда RTX 4090, 5090 и A100 — мгновенно по клику</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPU Cloud Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="images/Logo.png" alt="GPU Cloud Logo" class="logo" />
+    <h1>Облачные GPU-серверы</h1>
+    <p>Аренда RTX 4090, 5090, A100 — мгновенный старт без очередей</p>
+  </header>
 
+  <section class="hero">
+    <img src="images/Pic1.png" alt="Промо" />
+  </section>
+
+  <section class="features">
+    <h2>Вычислительные ресурсы для ваших задач</h2>
+    <div class="cards">
       <div class="card">
-        <h2>RTX 4090</h2>
-        <input type="range" min="1" max="24" value="1" />
-        <button>Запустить</button>
+        <h3>Машинное обучение и ИИ</h3>
+        <p>Получите доступ к мощным GPU для обучения и инференса моделей.</p>
       </div>
-
       <div class="card">
-        <h2>RTX 5090</h2>
-        <input type="range" min="1" max="24" value="1" />
-        <button>Запустить</button>
+        <h3>Рендеринг и VFX</h3>
+        <p>Обрабатывайте сцены в 10 раз быстрее благодаря GPU мощного класса.</p>
       </div>
-
       <div class="card">
-        <h2>NVIDIA A100</h2>
-        <input type="range" min="1" max="24" value="1" />
-        <button>Запустить</button>
+        <h3>Стриминг и API</h3>
+        <p>Обслуживание пользователей в реальном времени без задержек.</p>
       </div>
-
-      <footer>© 2025 GPU Cloud. Все права защищены.</footer>
     </div>
-  </body>
-</html>
+  </section>
+
+  <section class="benchmarks">
+    <h2>Тесты производительности GPU</h2>
+    <div class="bench-card">
+      <p><strong>Matrix multiply example</strong><br><span class="big">5300</span> GFlop/s</p>
+      <p><strong>Hashcat bcrypt</strong><br><span class="big">210 000</span> H/s</p>
+    </div>
+  </section>
+
+  <section class="pricing">
+    <h2>Тарифы</h2>
+
+    <details>
+      <summary>RTX 4090</summary>
+      <ul>
+        <li>16 vCPU / 128 GB RAM / 1 GPU —
