@@ -1,17 +1,35 @@
-<body>
-  <!-- hero-шапка -->
-  <header class="hero">
-    <h1>GPU-Cloud Demo</h1>
-    <p class="tagline">Аренда RTX 4090, 5090 и A100 «по щелчку»</p>
-  </header>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GPU Cloud Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>GPU Cloud Demo</h1>
+      <p class="subtitle">Аренда RTX 4090, 5090 и A100 — мгновенно по клику</p>
 
-  <!-- контент-контейнер -->
-  <main class="container">
-    <section id="cards" class="cards-grid">
-      … <!-- ваши div.gpu-card как были -->
-    </section>
-  </main>
+      <div class="card">
+        <h2>RTX 4090</h2>
+        <input type="range" min="1" max="24" value="1" />
+        <button>Запустить</button>
+      </div>
 
-  <!-- модалка остаётся без изменений -->
-  … 
-</body>
+      <div class="card">
+        <h2>RTX 5090</h2>
+        <input type="range" min="1" max="24" value="1" />
+        <button>Запустить</button>
+      </div>
+
+      <div class="card">
+        <h2>NVIDIA A100</h2>
+        <input type="range" min="1" max="24" value="1" />
+        <button>Запустить</button>
+      </div>
+
+      <footer>© 2025 GPU Cloud. Все права защищены.</footer>
+    </div>
+  </body>
+</html>

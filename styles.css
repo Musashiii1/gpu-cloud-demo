@@ -1,83 +1,69 @@
-/* =============== базовые переменные =============== */
-:root{
-    --accent:#007CFF;
-    --bg:#F4F6F9;
-    --card-bg:#FFF;
-    --radius:18px;
-    --shadow:0 8px 24px rgba(0,0,0,.08);
-    --font-main:"Inter",system-ui,sans-serif;
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
   }
   
-  /* Google Font – один импорт-URL, можно оставить и локал */
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-  
-  /* =============== reset/box-model =============== */
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:var(--font-main);background:var(--bg);color:#1b1b1b;line-height:1.4}
-  
-  /* =============== hero-section =============== */
-  .hero{text-align:center;padding:3.5rem 1rem}
-  .hero h1{font-size:2.2rem;font-weight:600;margin-bottom:.25rem}
-  .tagline{font-size:1rem;color:#555}
-  
-  /* =============== контент-обёртка =============== */
-  .container{max-width:960px;margin-inline:auto;padding:0 1rem}
-  
-  /* =============== сетка карт ==================== */
-  .cards-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
-    gap:1.5rem;
-    padding-bottom:3rem;
+  .container {
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 20px;
   }
   
-  /* =============== карточка GPU ================== */
-  .gpu-card{
-    background:var(--card-bg);
-    border-radius:var(--radius);
-    box-shadow:var(--shadow);
-    padding:1.75rem;
-    transition:transform .15s ease, box-shadow .15s ease;
-  }
-  .gpu-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.12)}
-  .gpu-card h3{margin-bottom:1rem;font-size:1.25rem}
-  
-  /* =============== слайдер цены ================== */
-  .months{
-    width:100%;
-    margin-bottom:1rem;
-    accent-color:var(--accent);  /* окраска ползунка в Chrome/Edge */
+  h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
   }
   
-  /* =============== кнопка ======================== */
-  button{
-    background:var(--accent);
-    color:#fff;
-    border:none;
-    padding:.65rem 1.4rem;
-    border-radius:8px;
-    font-weight:600;
-    cursor:pointer;
-    transition:background .2s ease;
+  .subtitle {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
   }
-  button:hover{background:#0063cc}
   
-  /* =============== модальное окно =============== */
-  #modal{
-    position:fixed;inset:0;display:flex;align-items:center;justify-content:center;
-    background:rgba(0,0,0,.55);
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    margin-bottom: 20px;
   }
-  .modal-box{
-    background:var(--card-bg);
-    border-radius:var(--radius);
-    padding:2rem 2.5rem;
-    box-shadow:var(--shadow);
-    width:360px;
+  
+  .card h2 {
+    margin-top: 0;
+    font-size: 20px;
   }
-  .modal-box h3{margin-bottom:.5rem;font-size:1.35rem}
-  .modal-box form{display:flex;flex-direction:column;gap:.75rem;margin-top:1rem}
-  .modal-box input{padding:.55rem;border:1px solid #ccc;border-radius:6px}
   
-  /* скрытый элемент */
-  [hidden]{display:none}
+  .card input[type="range"] {
+    width: 100%;
+    margin: 12px 0;
+  }
   
+  button {
+    padding: 8px 16px;
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0050cc;
+  }
+  
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+  }
+  .label {
+  display: inline-block;
+  margin-left: 12px;
+  font-size: 14px;
+  color: #333;
+}
