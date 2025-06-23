@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>GPU-Cloud Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<section id="cards" class="grid">
+  <!-- RTX 4090 -->
+  <div class="gpu-card" data-gpu="4090" data-price="40">
+    <h3>RTX 4090</h3>
+    <input type="range" min="1" max="6" value="1" class="months">
+    <p class="price"></p>
+    <button class="launch">Запустить</button>
+  </div>
+  <!-- RTX 5090 (placeholder) -->
+  <div class="gpu-card" data-gpu="5090" data-price="55">
+    <h3>RTX 5090</h3>
+    <input type="range" min="1" max="6" value="1" class="months">
+    <p class="price"></p>
+    <button class="launch">Запустить</button>
+  </div>
+  <!-- A100 -->
+  <div class="gpu-card" data-gpu="A100" data-price="75">
+    <h3>NVIDIA A100</h3>
+    <input type="range" min="1" max="6" value="1" class="months">
+    <p class="price"></p>
+    <button class="launch">Запустить</button>
+  </div>
+</section>
+
+<!-- Модал -->
+<div id="modal" hidden>
+  <div class="modal-box">
+    <h3>Все серверы заняты</h3>
+    <p>Оставьте рабочий e-mail — сообщим, когда освободится слот.</p>
+    <form id="waitlist">
+      <input type="email" placeholder="work@company.com" required>
+      <input type="number" min="10" placeholder="GPU-часы / мес" required>
+      <button type="submit">Встать в очередь</button>
+    </form>
+    <p id="queuePos"></p>
+  </div>
+</div>
+
+<script src="main.js" type="module"></script>
+</body>
+</html>
